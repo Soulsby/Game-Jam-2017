@@ -9,11 +9,19 @@ public class Player : MonoBehaviour
     //Singleton
     public static Player control;
 
+    public int score = 0;
+
+
     //To be private
-    public int[] stats = new int[9];
+    public int[] stats = new int[3];
+    //int[0] is number of coins
+    //int[1] is scene number
+    //int[2] is score
 
-    //public GameObject[] items;
-
+    public void addToScore(int toAdd)
+    {
+        score += toAdd;
+    }
     void Awake()
     {
         //Enhanced Singleton
@@ -28,10 +36,6 @@ public class Player : MonoBehaviour
         }
         //Initialize
     }
-
-    //void OnGUI (){
-    //	GUI.Label(new Rect(100,100,100,30), "Silver: " + silver);
-    //}
 
     public void Save()
     {
@@ -59,8 +63,9 @@ public class Player : MonoBehaviour
     }
 }
 [Serializable]
-class PlayerData{
-	public int silver;
+class PlayerData
+{
+    public int silver;
 
     //TODO serializable
     //public string[] creatureNames;

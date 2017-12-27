@@ -32,6 +32,6 @@ public class Collectibles : MonoBehaviour
 
     public void add(int toAdd)
     {
-        quantity += 5;
+        quantity += toAdd;
     }
 }
