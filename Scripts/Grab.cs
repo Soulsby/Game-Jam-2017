@@ -8,7 +8,6 @@ public class Grab : MonoBehaviour {
 
 	// Use this for initialization
 	void OnTriggerEnter (Collider other) {
-        Debug.Log("hi");
         coins = other.transform.parent.GetComponent<Coins>();
         coins.add();
         GameObject.Destroy(this.gameObject);
