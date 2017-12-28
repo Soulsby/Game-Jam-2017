@@ -2,15 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scipt2 : MonoBehaviour {
+public class Grab : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
+	void OnCollisionEnter () {
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
