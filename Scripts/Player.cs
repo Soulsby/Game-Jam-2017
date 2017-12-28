@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
@@ -65,7 +64,7 @@ public class Player : MonoBehaviour
 [Serializable]
 class PlayerData
 {
-    public int silver;
+    
 
     //TODO serializable
     //public string[] creatureNames;
