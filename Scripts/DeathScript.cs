@@ -5,14 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class DeathScript : MonoBehaviour {
 
+    public Vector3 spawn;
+
     void OnTriggerEnter(Collider other)
     {
-        
+        other.transform.parent.position = spawn;  
+    
     }
 
     public void Ondeath()
     { 
-        SceneManager.LoadScene("Scene1");
+      
     }
     // Use this for initialization
     void Start () {
@@ -23,4 +26,5 @@ public class DeathScript : MonoBehaviour {
 	void Update () {
 		
 	}
+
 }
