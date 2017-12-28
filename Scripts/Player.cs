@@ -2,13 +2,16 @@ using UnityEngine;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-
+using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     //Singleton
     public static Player control;
 
     public int score = 0;
+
+    public Text scoreText;
+    
 
 
     //To be private
@@ -34,6 +37,11 @@ public class Player : MonoBehaviour
             Destroy(gameObject);
         }
         //Initialize
+    }
+
+     void Update()
+    {
+        scoreText.text = "You're score is    : " + score;
     }
 
     public void Save()
