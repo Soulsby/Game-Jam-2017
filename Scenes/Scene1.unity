@@ -1089,6 +1089,7 @@ GameObject:
   - component: {fileID: 1484113305}
   - component: {fileID: 1484113304}
   - component: {fileID: 1484113303}
+  - component: {fileID: 1484113307}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -1110,7 +1111,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 3b2dfb614591f0447a4f1cfd8c3ed28c, type: 2}
+  - {fileID: 2100000, guid: ba21005bd614b2e4d933951399d8b211, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1137,7 +1138,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1484113302}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1162,6 +1163,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1484113307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1484113302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c17caaa7e1f654b8597f6b17675b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevel: 2
 --- !u!1 &1500813491
 GameObject:
   m_ObjectHideFlags: 0
